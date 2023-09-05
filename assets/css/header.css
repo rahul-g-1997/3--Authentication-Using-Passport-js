@@ -1,4 +1,9 @@
-nav {
+header {
+    padding: 0;
+}
+
+#navbar {
+    align-items: center;
     display: flex;
     top: 0;
     position: fixed;
@@ -6,23 +11,42 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
     width: 100%;
-    padding-left: 3%;
+    padding: 0 20px;
+    justify-content: space-between;
 }
 
-#logo {
-    width: 50%;
 
+
+#logo h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-menu {
-    padding-right: 3%;
+#menu {
+    list-style-type: none;
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0 20px;
+    align-items: center;
+}
+
+#menu li {
+    margin-right: 15px;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-weight: bolder;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#profile {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 40%;
+    margin: 5px 15px 5px 5px;
 }
